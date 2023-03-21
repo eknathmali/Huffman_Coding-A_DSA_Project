@@ -213,7 +213,7 @@ public:
     string text, encoded_text, padded_text;
     vector<int> byte_data;
     unordered_map<char, int> freq_map{};
-    // Decompress
+
 
     HuffmanCode(string path)
     {
@@ -268,7 +268,6 @@ int main()
 {
     HuffmanCode *ptr = new HuffmanCode("file.txt");
     ptr->compress();
-
     ptr->decompress();
 
     return 0;
